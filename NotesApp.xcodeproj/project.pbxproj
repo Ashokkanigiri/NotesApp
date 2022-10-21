@@ -10,7 +10,7 @@
 		574A9C358387BEE346547879 /* Pods_NotesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283CC97B5E16673411AB18F1 /* Pods_NotesApp.framework */; };
 		65EF8EC529026CB600C6160B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF8EC429026CB600C6160B /* AppDelegate.swift */; };
 		65EF8EC729026CB600C6160B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF8EC629026CB600C6160B /* SceneDelegate.swift */; };
-		65EF8EC929026CB600C6160B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF8EC829026CB600C6160B /* ViewController.swift */; };
+		65EF8EC929026CB600C6160B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF8EC829026CB600C6160B /* WelcomeViewController.swift */; };
 		65EF8ECC29026CB600C6160B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65EF8ECA29026CB600C6160B /* Main.storyboard */; };
 		65EF8ECF29026CB600C6160B /* NotesApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65EF8ECD29026CB600C6160B /* NotesApp.xcdatamodeld */; };
 		65EF8ED129026CB800C6160B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65EF8ED029026CB800C6160B /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		65EF8EC129026CB600C6160B /* NotesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EF8EC429026CB600C6160B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65EF8EC629026CB600C6160B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		65EF8EC829026CB600C6160B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65EF8EC829026CB600C6160B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		65EF8ECB29026CB600C6160B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65EF8ECE29026CB600C6160B /* NotesApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NotesApp.xcdatamodel; sourceTree = "<group>"; };
 		65EF8ED029026CB800C6160B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,16 +65,40 @@
 		65EF8EC329026CB600C6160B /* NotesApp */ = {
 			isa = PBXGroup;
 			children = (
+				65F65900290272B40031D4D0 /* model */,
+				65F658FF290272AE0031D4D0 /* controller */,
+				65F658FE290272A80031D4D0 /* view */,
 				65EF8EC429026CB600C6160B /* AppDelegate.swift */,
 				65EF8EC629026CB600C6160B /* SceneDelegate.swift */,
-				65EF8EC829026CB600C6160B /* ViewController.swift */,
-				65EF8ECA29026CB600C6160B /* Main.storyboard */,
 				65EF8ED029026CB800C6160B /* Assets.xcassets */,
-				65EF8ED229026CB800C6160B /* LaunchScreen.storyboard */,
 				65EF8ED529026CB800C6160B /* Info.plist */,
 				65EF8ECD29026CB600C6160B /* NotesApp.xcdatamodeld */,
 			);
 			path = NotesApp;
+			sourceTree = "<group>";
+		};
+		65F658FE290272A80031D4D0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65EF8ECA29026CB600C6160B /* Main.storyboard */,
+				65EF8ED229026CB800C6160B /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		65F658FF290272AE0031D4D0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				65EF8EC829026CB600C6160B /* WelcomeViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		65F65900290272B40031D4D0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		66C0B5BB938F0E449236036A /* Pods */ = {
@@ -83,7 +107,6 @@
 				4E49D2C4A2DB59939C4DFCE5 /* Pods-NotesApp.debug.xcconfig */,
 				4F9CECA5DBE98A1C353A087A /* Pods-NotesApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65EF8EC929026CB600C6160B /* ViewController.swift in Sources */,
+				65EF8EC929026CB600C6160B /* WelcomeViewController.swift in Sources */,
 				65EF8EC529026CB600C6160B /* AppDelegate.swift in Sources */,
 				65EF8EC729026CB600C6160B /* SceneDelegate.swift in Sources */,
 				65EF8ECF29026CB600C6160B /* NotesApp.xcdatamodeld in Sources */,
